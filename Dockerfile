@@ -7,4 +7,4 @@ RUN dotnet restore \
     && dotnet build
 
 EXPOSE 5555
-CMD dotnet run --server.urls http://+:5555
+CMD dotnet run --server.urls http://0.0.0.0:5555
