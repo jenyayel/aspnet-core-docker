@@ -6,5 +6,5 @@ WORKDIR /WebAPI
 RUN dotnet restore \
     && dotnet build
 
-EXPOSE $PORT
-CMD dotnet run --server.urls http://+:$PORT
+EXPOSE 5555
+CMD dotnet run --server.urls http://+:5555
